@@ -452,6 +452,7 @@ workflows:
       - deploy_the_application:
           requires:
             # - run_database_migrations
+            - build_docker_image
             - init_update_infrastructure
           filters:
             branches:
