@@ -2,10 +2,10 @@
 terraform {
   backend "s3" {
     profile              = "root"
-    bucket               = "vova-tfstate" # Replace PROJECT_NAME with the name of your project
+    bucket               = "devopsback-tfstate" # Replace PROJECT_NAME with the name of your project
     workspace_key_prefix = "environments-backend"
     key                  = "resources.tfstate"
-    region               = "eu-west-1" # Select your default region
+    region               = "eu-west-2" # Select your default region
     encrypt              = true
   }
 }
